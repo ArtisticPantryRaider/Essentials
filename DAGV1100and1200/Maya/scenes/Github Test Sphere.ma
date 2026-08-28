@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Github Test Sphere.ma
-//Last modified: Fri, Aug 28, 2026 10:24:35 AM
+//Last modified: Fri, Aug 28, 2026 10:30:11 AM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.1.1";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "7C997AB9-423E-5FD2-FDCC-2595B727015B";
+fileInfo "UUID" "AD2F4D58-4E97-D717-3073-7E961FE21EC7";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "83F39CEF-4EA0-EA14-FC68-0DA5E4090960";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-14 ;
+	setAttr ".t" -type "double3" -54.207801067118723 9.9536467268846991 -16.987695125784477 ;
+	setAttr ".r" -type "double3" -9.9383527290857145 252.60000000000943 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "07D07504-4DA8-B6F2-AAE8-E7AFFBE9A506";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 44.82186966202994;
+	setAttr ".coi" 57.672719420732783;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -78,6 +78,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "pSphere1";
 	rename -uid "34EAE75A-4B9A-442D-35A2-1689E0FA9857";
+	setAttr ".s" -type "double3" 0.9999999999999829 3.1991478187155997 -2.6454585074962238 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "D8A93573-4C24-7CD2-91F5-948D4A0FE7B7";
 	setAttr -k off ".v";
